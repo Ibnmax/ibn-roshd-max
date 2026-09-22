@@ -1,34 +1,17 @@
 ## Hi there, we are TEAM 7371
-Here is the YouTube video link for our robot → \[[(https://youtu.be/F4-R_nkTTqw?si=RATRviskS9dbDN2P)\]
+Here is the YouTube video link for our robot → \[[([https://youtu.be/F4-R_nkTTqw?si=RATRviskS9dbDN2P](https://youtu.be/d9VSKAYB4kY?feature=shared))\]
 
-and this fore the obstcale round : https://youtu.be/KA0iE_iIY_Y?si=s2kVDWvs9qxOMXv2
+and this fore the obstcale round : [https://youtu.be/KA0iE_iIY_Y?si=s2kVDWvs9qxOMXv2](https://youtu.be/1VgxIUpCT7o?feature=shared)
 
 ------------------------------------------------------------------------
 
 ## Strategy of the Robot in Gameplay
 
-At the start, the robot relies on computer vision processed by the
-*Jetson Nano* to detect cubes on the field. The Jetson Nano applies
-ROI (Region of Interest) to separate the cubes from each other,
-calculate their relative distances, and decide which cube to approach.
-The robot always prioritizes avoiding the closest cube rather than
-moving toward the farther ones.
+At the start, the robot relies on computer vision processed by the HUSKYLENS 2 to detect field elements. The camera analyzes image geometry to recognize intersections and colored pillars, deciding when to initiate avoidance maneuvers based on visual proximity.
+The Arduino Mega 2560 works as the central controller, managing a structured state machine. It receives vision data via UART and integrates it with gyro yaw feedback from the MPU6050 to ensure precise navigation. It then converts these inputs into commands for the drive and steering motors, while triggering a buzzer to provide sound feedback.
+With the help of six URM09 ultrasonic sensors placed around the chassis, the robot monitors wall distances to prevent collisions, confirm corner turns, and execute a highly accurate final parking sequence safely.
+The custom chassis features a front steering mechanism controlled by a servo motor. Combined with a rear geared DC motor and a Hall encoder for exact distance measurement, the robot achieves stable, precise movements while navigating the field.
 
-The *Arduino Nano* works as the low-level controller. It receives
-processed signals from the Jetson Nano and converts them into commands
-for the motors and servos. Additionally, the Arduino Nano sends gyro
-angle data back to the Jetson Nano to improve navigation accuracy. It
-also triggers a buzzer to provide sound feedback during operation.
-
-With the help of *DF Ultrasonic sensors* placed around the robot, we
-can detect obstacles in 360 degrees and avoid collisions at corners,
-while also ensuring the robot can stop and leave the starting area
-safely.
-
-The rear *differential mechanism* allows the wheels to rotate
-smoothly, making the robot's turns sharper and more stable. Combined
-with servo motors for steering, the robot achieves precise movements
-while navigating the field.
 
 ------------------------------------------------------------------------
 
