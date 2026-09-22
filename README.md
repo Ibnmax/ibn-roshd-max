@@ -42,7 +42,7 @@ Jetson Nano for accurate orientation.
 
 ------------------------------------------------------------------------
 
-### 3. HUSKYLENS 2
+### 2. HUSKYLENS 2
 
 The HuskyLens 2 is an AI-powered machine vision sensor designed to act as both the "eyes and brain" for robotics and embedded systems.
  * Edge AI Processing: It independently analyzes images to recognize colors, objects, lines, and faces, taking the computational load off the main microcontroller.
@@ -52,7 +52,7 @@ for real-time image processing in robotics.
 
 ------------------------------------------------------------------------
 
-### 4. Servo Motors
+### 3. Servo Motors
 
 Servo motors allow the robot to rotate and adjust its steering angles
 precisely. By controlling angular position, they help the robot maneuver
@@ -60,7 +60,7 @@ effectively around obstacles.
 
 ------------------------------------------------------------------------
 
-### 5. Differential Mechanism
+### 4. Differential Mechanism
 
 We implemented a rear differential that ensures smooth wheel rotation
 and better cornering. This design provides the robot with sharper and
@@ -68,7 +68,7 @@ more stable turning capabilities.
 
 ------------------------------------------------------------------------
 
-### 6. Voltage Regulator
+### 5. Voltage Regulator
 
 The voltage regulator converts the battery's input voltage to 5V to
 power the sensors and control units. This ensures stable operation of
@@ -76,7 +76,7 @@ sensitive components.
 
 ------------------------------------------------------------------------
 
-### 7. Battery
+### 6. Battery
 
 The battery provides the main power source for the entire robot,
 supplying both the Jetson Nano and the Arduino Nano as well as the
@@ -84,7 +84,7 @@ motors.
 
 ------------------------------------------------------------------------
 
-### 8. DF Ultrasonic Sensors
+### 7. DF Ultrasonic Sensors
 
 Multiple *DF ultrasonic sensors* are installed around the robot to
 achieve 360-degree obstacle detection. These sensors help prevent
@@ -93,7 +93,7 @@ the starting area.
 
 ------------------------------------------------------------------------
 
-### 9. 3D Printing
+### 8. 3D Printing
 
 We used *Autodesk Inventor* to design the chassis and printed the
 parts using a 3D printer. This includes the body, camera holders, and
@@ -101,12 +101,6 @@ sensor mounts.
 
 ------------------------------------------------------------------------
 
-### 10. Laser Cutter
-
-A laser cutting machine was used to cut acrylic sheets for structural
-supports and stands that hold the robot's main components.
-
-------------------------------------------------------------------------
 
 ## Source Code
 
