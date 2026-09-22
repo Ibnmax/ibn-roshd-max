@@ -1,4 +1,4 @@
-## Hi there, we are ibn roshd max
+## Hi there, we are TEAM 7371
 Here is the YouTube video link for our robot → \[[(https://youtu.be/F4-R_nkTTqw?si=RATRviskS9dbDN2P)\]
 
 and this fore the obstcale round : https://youtu.be/KA0iE_iIY_Y?si=s2kVDWvs9qxOMXv2
@@ -32,7 +32,7 @@ while navigating the field.
 
 ------------------------------------------------------------------------
 
-## How to Use Arduino Nano
+## How to Use Arduino mega 2560
 
 We programmed the Arduino Nano using the Arduino IDE. The Arduino
 receives serial data from the Jetson Nano and translates it into PWM
@@ -44,24 +44,9 @@ the Jetson Nano.
 
 ## Robot Components
 
-### 1. Jetson Nano
-
-The Jetson Nano is the high-level controller of the robot. It processes
-the video feed from the CSI camera, applies image recognition, detects
-cubes, and calculates their distances. Using ROI (Region of Interest),
-the Jetson Nano identifies each cube individually and decides which path
-to follow while avoiding the closest obstacles.
-
-*Specifications:*\
-•⁠  ⁠CPU: Quad-core ARM Cortex-A57\
-•⁠  ⁠GPU: 128-core NVIDIA Maxwell\
-•⁠  ⁠RAM: 4GB\
-•⁠  ⁠Camera Interface: CSI-2\
-•⁠  ⁠Connectivity: GPIO, I2C, SPI, UART
-
 ------------------------------------------------------------------------
 
-### 2. Arduino Nano
+### 1. Arduino Nano
 
 The Arduino Nano serves as the low-level controller. It receives
 instructions from the Jetson Nano and controls:\
@@ -74,11 +59,13 @@ Jetson Nano for accurate orientation.
 
 ------------------------------------------------------------------------
 
-### 3. CSI Camera
+### 3. HUSKYLENS 2
 
-The CSI camera provides live video input to the Jetson Nano. It is
-lightweight, compact, and designed for fast frame capture, making it
-ideal for real-time image processing in robotics.
+The HuskyLens 2 is an AI-powered machine vision sensor designed to act as both the "eyes and brain" for robotics and embedded systems.
+ * Edge AI Processing: It independently analyzes images to recognize colors, objects, lines, and faces, taking the computational load off the main microcontroller.
+ * Click-to-Learn Training: Using its built-in screen and buttons, it can learn to identify new objects or colors instantly without requiring external computers or complex programming.
+ * Ready-to-Use Data: It transmits processed results (X, Y coordinates, width, height, and IDs) directly to controllers like Arduino via UART or I2C, making it highly efficient for autonomous tasks
+for real-time image processing in robotics.
 
 ------------------------------------------------------------------------
 
