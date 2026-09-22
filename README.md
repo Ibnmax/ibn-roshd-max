@@ -17,11 +17,7 @@ The custom chassis features a front steering mechanism controlled by a servo mot
 
 ## How to Use Arduino mega 2560
 
-We programmed the Arduino Nano using the Arduino IDE. The Arduino
-receives serial data from the Jetson Nano and translates it into PWM
-signals for DC motors and servo motors. The connection is established
-via USB or serial pins, and the board communicates bidirectionally with
-the Jetson Nano.
+WWe programmed the Arduino Mega 2560 using the Arduino IDE. The Arduino receives serial data from the HUSKYLENS 2 and translates it into PWM signals for the DC motor and servo motor. The connection is established via UART serial pins, and the board communicates bidirectionally with the HUSKYLENS 2.
 
 ------------------------------------------------------------------------
 
@@ -29,16 +25,12 @@ the Jetson Nano.
 
 ------------------------------------------------------------------------
 
-### 1. Arduino Nano
-
-The Arduino Nano serves as the low-level controller. It receives
-instructions from the Jetson Nano and controls:\
-•⁠  ⁠DC motors for movement\
-•⁠  ⁠Servo motors for steering\
-•⁠  ⁠A buzzer for sound alerts
-
-It also reads the *gyro sensor* and sends angular data back to the
-Jetson Nano for accurate orientation.
+### 1. Arduino Mega 2560
+The Arduino Mega 2560 serves as the main controller. It receives data from the HUSKYLENS 2 and controls:
+ * DC motors for movement.
+ * Servo motors for steering.
+ * A buzzer for sound alerts.
+It also reads the MPU6050 gyro sensor to track heading and maintain accurate orientation.
 
 ------------------------------------------------------------------------
 
